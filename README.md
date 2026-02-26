@@ -245,7 +245,7 @@ Para melhor visualização e entendimento da estrutura do sistema, os diagramas 
 ## 🔧 Instalação e Execução
 
 ### Pré-requisitos
-* **Node.js:** Versão LTS (v18.x ou superior) (Necessário para o **Front-end React**)
+* **Node.js:** Versão LTS (v18.x até 20) (Necessário para o **Front-end React**)
 * **Gerenciador de Pacotes:** npm 
 
 
