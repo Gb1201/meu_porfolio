@@ -2,8 +2,9 @@
 # 🏷️ Portfolio do Gabriel Santos 👨‍💻
 
 > [!NOTE]
-> Breve descrição do projeto.  
-> Crie uma **logo** para o projeto que represente a aplicação em questão.
+> Este projeto é um site de portfólio pessoal criado para apresentar minhas informações profissionais, projetos e contatos de forma organizada.
+  Ele consolida minha identidade profissional no ambiente digital, demonstra minhas habilidades técnicas na prática e funciona como um cartão de visitas online.
+
 
 <table>
   <tr>
