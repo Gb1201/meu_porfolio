@@ -202,8 +202,8 @@ As seguintes ferramentas, frameworks e bibliotecas foram utilizados na construç
 
 ### 💻 Front-end
 
-* **Framework/Biblioteca:** [React v18]
-* **Linguagem/Superset:** [JavaScript]
+* **Framework/Biblioteca:** [Next]
+* **Linguagem/Superset:** [TypeScript]
 * **Estilização:** [Ex: Tailwind CSS]
 
 
@@ -245,7 +245,6 @@ Para melhor visualização e entendimento da estrutura do sistema, os diagramas 
 ## 🔧 Instalação e Execução
 
 ### Pré-requisitos
-* **Node.js:** Versão LTS (v18.x até 20) (Necessário para o **Front-end React**)
 * **Gerenciador de Pacotes:** npm 
 
 
@@ -391,31 +390,44 @@ Descreva o propósito das pastas principais.
 
 ```
 .
+├── .next/ # ⚡ Arquivos gerados automaticamente pelo Next.js (build)
+│
+├── app/ # 🚀 Estrutura principal do App Router (Next.js 13+)
+│ ├── globals.css # 🎨 Estilos globais da aplicação
+│ ├── layout.tsx # 🏗️ Layout raiz da aplicação
+│ └── page.tsx # 🏠 Página inicial (rota "/")
+│
+├── components/ # 🧱 Componentes reutilizáveis
+│ ├── ui/ # 🎛️ Componentes base de interface
+│ ├── about.tsx # 👤 Seção "Sobre"
+│ ├── contact.tsx # 📞 Seção "Contato"
+│ ├── experiences.tsx # 💼 Seção "Experiências"
+│ ├── footer.tsx # 🔻 Rodapé da aplicação
+│ ├── hero.tsx # 🎯 Seção principal (Hero)
+│ ├── navbar.tsx # 🧭 Barra de navegação
+│ ├── projects.tsx # 📂 Seção de projetos
+│ └── theme-provider.tsx # 🌗 Controle de tema (Dark/Light Mode)
+│
+├── hooks/ # 🪝 Hooks customizados
+│
+├── lib/ # 📚 Funções utilitárias e helpers
+│
+├── public/ # 🌐 Arquivos públicos (imagens, ícones, etc.)
+│
+├── styles/ # 🎨 Arquivos de estilo adicionais
+│
 ├── node_modules/ # 📦 Dependências instaladas pelo npm
 │
-├── portfolio/ # 📁 Aplicação principal (Vite + React)
-│ ├── node_modules/ # 📦 Dependências da aplicação React
-│ │
-│ ├── public/ # 📂 Arquivos públicos (acessíveis diretamente)
-│ │
-│ ├── src/ # 💻 Código-fonte da aplicação
-│ │ ├── assets/ # 🖼️ Recursos estáticos (imagens, ícones, etc.)
-│ │ ├── components/ # 🧱 Componentes reutilizáveis
-│ │ ├── pages/ # 📄 Páginas da aplicação (rotas)
-│ │ ├── App.jsx # 🚀 Componente principal da aplicação
-│ │ ├── App.css # 🎨 Estilos do componente principal
-│ │ ├── index.css # 🎨 Estilos globais
-│ │ └── main.jsx # 🔌 Ponto de entrada da aplicação React
-│ │
-│ ├── .gitignore # 🚫 Arquivos ignorados pelo Git
-│ ├── eslint.config.js # 🧹 Configuração do ESLint
-│ ├── index.html # 🌐 Arquivo HTML base
-│ ├── package.json # ⚙️ Dependências e scripts do projeto
-│ ├── package-lock.json # 🔒 Controle de versões das dependências
-│ ├── vite.config.js # ⚡ Configuração do Vite
-│ └── README.md # 📘 Documentação da aplicação
+├── .gitignore # 🚫 Arquivos ignorados pelo Git
+├── components.json # ⚙️ Configuração de componentes (ex: shadcn/ui)
+├── next-env.d.ts # 🧠 Definições de tipos do Next.js
+├── next.config.mjs # ⚡ Configuração do Next.js
+├── package.json # ⚙️ Dependências e scripts do projeto
+├── package-lock.json # 🔒 Controle de versões das dependências
+├── postcss.config.mjs # 🎨 Configuração do PostCSS
+├── tsconfig.json # 🟦 Configuração do TypeScript
 │
-└── README.md # 📘 Documentação principal do repositório
+└── README.md # 📘 Documentação do projeto
 ```
 
 ---
